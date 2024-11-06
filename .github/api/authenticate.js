@@ -5,7 +5,7 @@ export default async function handler(req, res) {
         const { mcid, recaptchaResponse } = req.query;
 
         // reCAPTCHAトークンの検証
-        const secretKey = 'YOUR_RECAPTCHA_SECRET_KEY'; // reCAPTCHAのシークレットキーを設定
+        const secretKey = '6LdLoHYqAAAAAPSxJD0MTJBfiq8zdSrbR52UGYYW'; // reCAPTCHAのシークレットキーを設定
         const verificationUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${secretKey}&response=${recaptchaResponse}`;
 
         try {
